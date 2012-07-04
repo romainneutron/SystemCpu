@@ -14,6 +14,14 @@ echo $scpuInfos->getTotalCores();
 
 foreach ($cpuInfos->cpus() as $cpu) {
     // Cpu object available here
+
+    $cpu->getId();          // Cpu Id
+    $cpu->getVendor();      // Vendor name
+    $cpu->getModel();       // CPU model Id
+    $cpu->getModelName();   // CPU model name
+    $cpu->getCache();       // the cache per proc
+    $cpu->getCores();       // an int for the number of cores
+    $cpu->getFlags();       // an array of flags
 }
 
 ```
