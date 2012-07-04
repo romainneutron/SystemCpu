@@ -2,8 +2,6 @@
 
 namespace Neutron\System;
 
-require_once dirname(__FILE__) . '/../../../../src/Neutron/System/CpuInfo.php';
-
 class CpuInfoTest extends \PHPUnit_Framework_TestCase
 {
 
@@ -70,7 +68,7 @@ power management:
 
         $this->assertInstanceOf('\\Neutron\\System\\CpuInfo', $cpuinfos);
 
-        $cpus =$cpuinfos->cpus();
+        $cpus = $cpuinfos->cpus();
         $this->assertEquals(2, count($cpus));
 
         $cpu1 = $cpus[0];

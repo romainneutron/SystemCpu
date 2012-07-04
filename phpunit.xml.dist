@@ -21,7 +21,7 @@
     </php>
 
     <testsuites>
-        <testsuite name="FFMpeg Tests Suite">
+        <testsuite name="Tests Suite">
             <directory>tests</directory>
         </testsuite>
     </testsuites>
