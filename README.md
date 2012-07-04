@@ -10,7 +10,7 @@ use Neutron\System\CpuInfo;
 $cpuInfos = CpuInfo::detect();
 
 // the total number of core
-echo $scpuInfos->getTotalCores();
+echo $cpuInfos->getTotalCores();
 
 foreach ($cpuInfos->cpus() as $cpu) {
     // Cpu object available here
